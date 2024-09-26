@@ -32,7 +32,7 @@ pub fn Home() -> Element {
         order: "order-b".to_string(),
       },
       div {
-        style: "margin: 3rem auto; font-size: 1.8rem; ",
+        class: "plan-container",
         h3 {
           "My action plan for this"
         }
@@ -42,7 +42,7 @@ pub fn Home() -> Element {
             "Build personal full-stack website with Rust. ✅"
           }
           li {
-            "Deploy full-stack website to google Cloud run. 🔎"
+            "Deploy full-stack website to firebase. 🔎"
           }
           li {
             "Create markdown editor for this website. 🚧"
