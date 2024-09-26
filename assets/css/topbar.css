@@ -116,6 +116,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.logo.footer {
+  width: 60px;
+}
+
 @media only screen and (min-width: 600px) {
   .top_bar .hamberger {
     display: none;

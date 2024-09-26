@@ -31,38 +31,36 @@ pub fn Home() -> Element {
         image: "https://images.squarespace-cdn.com/content/v1/634c5dc8c297a25f068e0d65/ea2754af-4c79-494c-a7b0-aaf5f78ff039/Learn+Rust+in+30+Minutes.jpg?format=2500w".to_string(),
         order: "order-b".to_string(),
       },
+      div {
+        class: "action-container",
+        h3 {
+          "My plan for this"
+        },
+        ol {
+          class: "action-list",
+          li {
+            "Build personal full-stack website with Rust. ✅"
+          }
+          li {
+            "Deploy full-stack website to firebase. 🔎"
+          }
+          li {
+            "Create markdown editor for this website. 🚧"
+          }
+          li {
+            "Create a blog system for this website. 🚧"
+          },
+          li {
+            "Share some interests feature of this website. 🚧"
+          }
+        },
+      },
       CardContent {
         title: "Which Dioxus framework!".to_string(),
         content: "I'm using a framework called `Dioxus` to develop this website because Dioxus is a portable, high-performance, and user-friendly framework for building cross-platform user interfaces 🌐, such as websites, desktops 🖥️, mobile apps 📱, and more. It offers a familiar environment, similar to ReactJS ⚛️, but is written in Rust.".to_string(),
         image: "https://dioxuslabs.com/static/multiplatform-light.svg".to_string(),
         order: "".to_string(),
-      },
-      div {
-        class: "action-container",
-        "HELLO RUST"
-        // h3 {
-        //   "My action plan for this"
-        // },
-        // ol {
-        //   style: "margin: 1rem;",
-        //   li {
-        //     "Build personal full-stack website with Rust. ✅"
-        //   }
-        //   li {
-        //     "Deploy full-stack website to firebase. 🔎"
-        //   }
-        //   li {
-        //     "Create markdown editor for this website. 🚧"
-        //   }
-        //   li {
-        //     "Create a blog system for this website. 🚧"
-        //   },
-        //   li {
-        //     "Share some interests feature of this website. 🚧"
-        //   }
-        // },
-        // "hello"
-      },
+      }
     }
   }
 }
