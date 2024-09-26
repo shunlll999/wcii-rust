@@ -1,0 +1,49 @@
+[application]
+
+# App (Project) Name
+name = "wcii"
+
+# Dioxus App Default Platform
+# web, desktop, fullstack
+default_platform = "fullstack"
+
+# `build` & `serve` dist path
+out_dir = "dist"
+
+# resource (assets) file folder
+asset_dir = "assets"
+
+[web.app]
+
+# HTML title tag content
+title = "wcii"
+
+[web.watcher]
+
+# when watcher trigger, regenerate the `index.html`
+reload_html = true
+
+# which files or dirs will be watcher monitoring
+watch_path = ["src", "assets"]
+
+# include `assets` in web platform
+[web.resource]
+
+# CSS style file
+
+style = [
+  "/css/main.css",
+  "/css/topbar.css",
+  "/css/home.css",
+  "/css/code.css",
+  "/css/card.css"
+]
+
+# Javascript code file
+script = []
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []
